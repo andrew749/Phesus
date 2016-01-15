@@ -1,0 +1,524 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B0752E771C48AB8E0024A178 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0752E761C48AB8E0024A178 /* AppDelegate.swift */; };
+		B0752E791C48AB8E0024A178 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0752E781C48AB8E0024A178 /* ViewController.swift */; };
+		B0752E7C1C48AB8E0024A178 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B0752E7A1C48AB8E0024A178 /* Main.storyboard */; };
+		B0752E7F1C48AB8E0024A178 /* Phesus.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B0752E7D1C48AB8E0024A178 /* Phesus.xcdatamodeld */; };
+		B0752E811C48AB8E0024A178 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B0752E801C48AB8E0024A178 /* Assets.xcassets */; };
+		B0752E841C48AB8E0024A178 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B0752E821C48AB8E0024A178 /* LaunchScreen.storyboard */; };
+		B0752E8F1C48AB8E0024A178 /* PhesusTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0752E8E1C48AB8E0024A178 /* PhesusTests.swift */; };
+		B0752E9A1C48AB8F0024A178 /* PhesusUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0752E991C48AB8F0024A178 /* PhesusUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B0752E8B1C48AB8E0024A178 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B0752E6B1C48AB8E0024A178 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B0752E721C48AB8E0024A178;
+			remoteInfo = Phesus;
+		};
+		B0752E961C48AB8F0024A178 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B0752E6B1C48AB8E0024A178 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B0752E721C48AB8E0024A178;
+			remoteInfo = Phesus;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		B0752E731C48AB8E0024A178 /* Phesus.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Phesus.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B0752E761C48AB8E0024A178 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		B0752E781C48AB8E0024A178 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		B0752E7B1C48AB8E0024A178 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B0752E7E1C48AB8E0024A178 /* Phesus.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Phesus.xcdatamodel; sourceTree = "<group>"; };
+		B0752E801C48AB8E0024A178 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B0752E831C48AB8E0024A178 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		B0752E851C48AB8E0024A178 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B0752E8A1C48AB8E0024A178 /* PhesusTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PhesusTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B0752E8E1C48AB8E0024A178 /* PhesusTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhesusTests.swift; sourceTree = "<group>"; };
+		B0752E901C48AB8F0024A178 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B0752E951C48AB8F0024A178 /* PhesusUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PhesusUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B0752E991C48AB8F0024A178 /* PhesusUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhesusUITests.swift; sourceTree = "<group>"; };
+		B0752E9B1C48AB8F0024A178 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B0752E701C48AB8E0024A178 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B0752E871C48AB8E0024A178 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B0752E921C48AB8F0024A178 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B0752E6A1C48AB8E0024A178 = {
+			isa = PBXGroup;
+			children = (
+				B0752E751C48AB8E0024A178 /* Phesus */,
+				B0752E8D1C48AB8E0024A178 /* PhesusTests */,
+				B0752E981C48AB8F0024A178 /* PhesusUITests */,
+				B0752E741C48AB8E0024A178 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B0752E741C48AB8E0024A178 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B0752E731C48AB8E0024A178 /* Phesus.app */,
+				B0752E8A1C48AB8E0024A178 /* PhesusTests.xctest */,
+				B0752E951C48AB8F0024A178 /* PhesusUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B0752E751C48AB8E0024A178 /* Phesus */ = {
+			isa = PBXGroup;
+			children = (
+				B0752E761C48AB8E0024A178 /* AppDelegate.swift */,
+				B0752E781C48AB8E0024A178 /* ViewController.swift */,
+				B0752E7A1C48AB8E0024A178 /* Main.storyboard */,
+				B0752E801C48AB8E0024A178 /* Assets.xcassets */,
+				B0752E821C48AB8E0024A178 /* LaunchScreen.storyboard */,
+				B0752E851C48AB8E0024A178 /* Info.plist */,
+				B0752E7D1C48AB8E0024A178 /* Phesus.xcdatamodeld */,
+			);
+			path = Phesus;
+			sourceTree = "<group>";
+		};
+		B0752E8D1C48AB8E0024A178 /* PhesusTests */ = {
+			isa = PBXGroup;
+			children = (
+				B0752E8E1C48AB8E0024A178 /* PhesusTests.swift */,
+				B0752E901C48AB8F0024A178 /* Info.plist */,
+			);
+			path = PhesusTests;
+			sourceTree = "<group>";
+		};
+		B0752E981C48AB8F0024A178 /* PhesusUITests */ = {
+			isa = PBXGroup;
+			children = (
+				B0752E991C48AB8F0024A178 /* PhesusUITests.swift */,
+				B0752E9B1C48AB8F0024A178 /* Info.plist */,
+			);
+			path = PhesusUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B0752E721C48AB8E0024A178 /* Phesus */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B0752E9E1C48AB8F0024A178 /* Build configuration list for PBXNativeTarget "Phesus" */;
+			buildPhases = (
+				B0752E6F1C48AB8E0024A178 /* Sources */,
+				B0752E701C48AB8E0024A178 /* Frameworks */,
+				B0752E711C48AB8E0024A178 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Phesus;
+			productName = Phesus;
+			productReference = B0752E731C48AB8E0024A178 /* Phesus.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B0752E891C48AB8E0024A178 /* PhesusTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B0752EA11C48AB8F0024A178 /* Build configuration list for PBXNativeTarget "PhesusTests" */;
+			buildPhases = (
+				B0752E861C48AB8E0024A178 /* Sources */,
+				B0752E871C48AB8E0024A178 /* Frameworks */,
+				B0752E881C48AB8E0024A178 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B0752E8C1C48AB8E0024A178 /* PBXTargetDependency */,
+			);
+			name = PhesusTests;
+			productName = PhesusTests;
+			productReference = B0752E8A1C48AB8E0024A178 /* PhesusTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		B0752E941C48AB8F0024A178 /* PhesusUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B0752EA41C48AB8F0024A178 /* Build configuration list for PBXNativeTarget "PhesusUITests" */;
+			buildPhases = (
+				B0752E911C48AB8F0024A178 /* Sources */,
+				B0752E921C48AB8F0024A178 /* Frameworks */,
+				B0752E931C48AB8F0024A178 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B0752E971C48AB8F0024A178 /* PBXTargetDependency */,
+			);
+			name = PhesusUITests;
+			productName = PhesusUITests;
+			productReference = B0752E951C48AB8F0024A178 /* PhesusUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B0752E6B1C48AB8E0024A178 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0720;
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = ACDP;
+				TargetAttributes = {
+					B0752E721C48AB8E0024A178 = {
+						CreatedOnToolsVersion = 7.2;
+					};
+					B0752E891C48AB8E0024A178 = {
+						CreatedOnToolsVersion = 7.2;
+						TestTargetID = B0752E721C48AB8E0024A178;
+					};
+					B0752E941C48AB8F0024A178 = {
+						CreatedOnToolsVersion = 7.2;
+						TestTargetID = B0752E721C48AB8E0024A178;
+					};
+				};
+			};
+			buildConfigurationList = B0752E6E1C48AB8E0024A178 /* Build configuration list for PBXProject "Phesus" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B0752E6A1C48AB8E0024A178;
+			productRefGroup = B0752E741C48AB8E0024A178 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B0752E721C48AB8E0024A178 /* Phesus */,
+				B0752E891C48AB8E0024A178 /* PhesusTests */,
+				B0752E941C48AB8F0024A178 /* PhesusUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B0752E711C48AB8E0024A178 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B0752E841C48AB8E0024A178 /* LaunchScreen.storyboard in Resources */,
+				B0752E811C48AB8E0024A178 /* Assets.xcassets in Resources */,
+				B0752E7C1C48AB8E0024A178 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B0752E881C48AB8E0024A178 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B0752E931C48AB8F0024A178 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B0752E6F1C48AB8E0024A178 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B0752E791C48AB8E0024A178 /* ViewController.swift in Sources */,
+				B0752E7F1C48AB8E0024A178 /* Phesus.xcdatamodeld in Sources */,
+				B0752E771C48AB8E0024A178 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B0752E861C48AB8E0024A178 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B0752E8F1C48AB8E0024A178 /* PhesusTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B0752E911C48AB8F0024A178 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B0752E9A1C48AB8F0024A178 /* PhesusUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B0752E8C1C48AB8E0024A178 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B0752E721C48AB8E0024A178 /* Phesus */;
+			targetProxy = B0752E8B1C48AB8E0024A178 /* PBXContainerItemProxy */;
+		};
+		B0752E971C48AB8F0024A178 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B0752E721C48AB8E0024A178 /* Phesus */;
+			targetProxy = B0752E961C48AB8F0024A178 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		B0752E7A1C48AB8E0024A178 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B0752E7B1C48AB8E0024A178 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		B0752E821C48AB8E0024A178 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B0752E831C48AB8E0024A178 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B0752E9C1C48AB8F0024A178 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B0752E9D1C48AB8F0024A178 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B0752E9F1C48AB8F0024A178 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Phesus/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.acdp.Phesus;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		B0752EA01C48AB8F0024A178 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Phesus/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.acdp.Phesus;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		B0752EA21C48AB8F0024A178 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = PhesusTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.acdp.PhesusTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Phesus.app/Phesus";
+			};
+			name = Debug;
+		};
+		B0752EA31C48AB8F0024A178 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = PhesusTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.acdp.PhesusTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Phesus.app/Phesus";
+			};
+			name = Release;
+		};
+		B0752EA51C48AB8F0024A178 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = PhesusUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.acdp.PhesusUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = Phesus;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		B0752EA61C48AB8F0024A178 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = PhesusUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.acdp.PhesusUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = Phesus;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B0752E6E1C48AB8E0024A178 /* Build configuration list for PBXProject "Phesus" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B0752E9C1C48AB8F0024A178 /* Debug */,
+				B0752E9D1C48AB8F0024A178 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B0752E9E1C48AB8F0024A178 /* Build configuration list for PBXNativeTarget "Phesus" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B0752E9F1C48AB8F0024A178 /* Debug */,
+				B0752EA01C48AB8F0024A178 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		B0752EA11C48AB8F0024A178 /* Build configuration list for PBXNativeTarget "PhesusTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B0752EA21C48AB8F0024A178 /* Debug */,
+				B0752EA31C48AB8F0024A178 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		B0752EA41C48AB8F0024A178 /* Build configuration list for PBXNativeTarget "PhesusUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B0752EA51C48AB8F0024A178 /* Debug */,
+				B0752EA61C48AB8F0024A178 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		B0752E7D1C48AB8E0024A178 /* Phesus.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				B0752E7E1C48AB8E0024A178 /* Phesus.xcdatamodel */,
+			);
+			currentVersion = B0752E7E1C48AB8E0024A178 /* Phesus.xcdatamodel */;
+			path = Phesus.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = B0752E6B1C48AB8E0024A178 /* Project object */;
+}
