@@ -11,9 +11,9 @@ import UIKit
 class ViewController: UIViewController {
     
     var tempNodes:[Node] = []
-    var tempViews:[UIView] = []
+    var tempViews:Set<UIView> = []
     var tempConnections:[Connection] = []
-    
+    var trackingViews:Set<UIView> = []
     @IBOutlet weak var mainView: ProjectView!
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -25,8 +25,8 @@ class ViewController: UIViewController {
         
         let tempView = NodeView(node: tempNode)
         let tempView2 = NodeView(node: tempNode2)
-        tempViews.append(tempView)
-        tempViews.append(tempView2)
+        tempViews.insert(tempView)
+        tempViews.insert(tempView2)
         
         mainView.addChildView(tempView)
         mainView.addChildView(tempView2)
@@ -42,6 +42,31 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
-
+    override func touchesBegan(touches: Set<UITouch>, withEvent event: UIEvent?) {
+        for touch in touches {
+            if let view = touch.view {
+                    trackingViews.insert(view)
+            }
+        }
+    }
+    
+    override func touchesMoved(touches: Set<UITouch>, withEvent event: UIEvent?) {
+        for touch in touches {
+            if let view = touch.view {
+                if trackingViews.contains(view)  {
+                    view.touchesMoved(touches, withEvent: event)
+                }
+            }
+        }
+    }
+    override func touchesEnded(touches: Set<UITouch>, withEvent event: UIEvent?) {
+        for touch  in touches {
+            if let view = touch.view{
+                if (trackingViews.contains(view)) {
+                    trackingViews.remove(view)
+                }
+            }
+        }
+    }
 }
 
