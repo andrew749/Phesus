@@ -30,24 +30,11 @@ class ProjectView: UIView {
         for view in childrenViews {
             view.drawRect(rect)
         }
-        
     }
     
     func addChildView(view:UIView) {
         childrenViews.append(view)
         self.drawRect(self.frame)
     }
-    func drawNode(x:CGFloat, y:CGFloat, shape:NodeType, context:CGContextRef) {
-        CGContextSetFillColorWithColor(context, UIColor.blackColor().CGColor)
-        if shape == NodeType.RECTANGLE {
-            let rect:CGRect = CGRect(x: x, y: y, width: NODE_WIDTH, height: NODE_HEIGHT)
-            CGContextFillRect(context , rect)
-        } else if shape ==  NodeType.CIRCLE {
-            
-        }
-    }
     
-    func drawConnection() {
-        
-    }
 }

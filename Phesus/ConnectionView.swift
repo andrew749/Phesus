@@ -23,11 +23,15 @@ class ConnectionView: UIView {
     required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
-    
+
+
     override func drawRect(rect: CGRect) {
         let ctx = UIGraphicsGetCurrentContext()
-        CGContextSetFillColorWithColor(ctx, fillColor)
-        CGContextRotateCTM(ctx, connection.getAngle())
-        CGContextFillRect(ctx, connection.getRect())
+        
+        CGContextSetStrokeColorWithColor(ctx, fillColor)
+        CGContextMoveToPoint(ctx, connection.getX(), connection.getY())
+        CGContextAddLineToPoint(ctx, connection.getToX(), connection.getToY())
+        CGContextStrokePath(ctx)
     }
+    
 }

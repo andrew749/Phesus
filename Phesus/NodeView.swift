@@ -26,11 +26,6 @@ class NodeView:UIView {
     override func drawRect(rect: CGRect) {
         let ctx = UIGraphicsGetCurrentContext()
         CGContextSetFillColorWithColor(ctx, fillColor)
-        let tempRect:CGRect = CGRect(
-            x:node.x - node.width/2,
-            y:node.y + node.height/2,
-            width:node.width,
-            height:node.height)
-        CGContextFillRect(ctx, tempRect)
+        CGContextFillRect(ctx, node.getRect())
     }
 }

@@ -11,6 +11,7 @@ import UIKit
 
 class Node {
     
+    //The center of the shape
     var x:CGFloat = 0
     var y:CGFloat = 0
     
@@ -26,7 +27,7 @@ class Node {
     }
     
     func getRect () -> CGRect {
-        return CGRect(x: x, y: y, width: width, height: height)
+        return CGRect(x: x - width/2, y: y-height/2, width: width, height: height)
     }
     
 }

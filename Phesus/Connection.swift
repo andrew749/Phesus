@@ -28,8 +28,19 @@ class Connection {
             sqrt(pow(toNode.y - fromNode.y,2) +
                 pow(toNode.x - fromNode.x,2)))
     }
-    
+    func getX() -> CGFloat {
+        return fromNode.x
+    }
+    func getY() -> CGFloat {
+        return fromNode.y
+    }
+    func getToX() -> CGFloat {
+        return toNode.x
+    }
+    func getToY() -> CGFloat {
+        return toNode.y
+    }
     func getAngle() -> CGFloat {
-        return 90
+        return tan((toNode.y - fromNode.y)/(toNode.x-fromNode.x))
     }
 }
