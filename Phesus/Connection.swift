@@ -35,19 +35,19 @@ class Connection:PhesusViewModel {
     }
     
     func getX() -> CGFloat {
-        return fromNode.x
+        return CGRectGetMidX(fromNode.getRect())
     }
     
     func getY() -> CGFloat {
-        return fromNode.y
+        return CGRectGetMidY(fromNode.getRect())
     }
     
     func getToX() -> CGFloat {
-        return toNode.x
+        return CGRectGetMidX(toNode.getRect())
     }
     
     func getToY() -> CGFloat {
-        return toNode.y
+        return CGRectGetMidY(toNode.getRect())
     }
     
     func getAngle() -> CGFloat {
