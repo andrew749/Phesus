@@ -42,11 +42,9 @@ class ViewController: UIViewController {
         mainView.addSubview(connectionView)
 
         
-        let recognizer = UIPanGestureRecognizer(target: self, action: "handleDrag:")
-        
         for view in tempViews {
             view.userInteractionEnabled = true
-            view.addGestureRecognizer(recognizer)
+            view.addGestureRecognizer(UIPanGestureRecognizer(target: self, action: "handleDrag:"))
         }
         super.view.setNeedsDisplay()
     }
