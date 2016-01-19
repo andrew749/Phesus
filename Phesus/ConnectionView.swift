@@ -9,7 +9,7 @@
 import Foundation
 import UIKit
 
-class ConnectionView: UIView {
+class ConnectionView: PhesusView {
     
     var connection:Connection
     var fillColor:CGColorRef
@@ -17,7 +17,7 @@ class ConnectionView: UIView {
     init(connection:Connection) {
         self.connection = connection
         self.fillColor = UIColor.brownColor().CGColor
-        super.init(frame: connection.getRect())
+        super.init(data: connection)
     }
 
     required init?(coder aDecoder: NSCoder) {
@@ -26,6 +26,7 @@ class ConnectionView: UIView {
 
 
     override func drawRect(rect: CGRect) {
+        super.drawRect(rect)
         let ctx = UIGraphicsGetCurrentContext()
         
         CGContextSetStrokeColorWithColor(ctx, fillColor)

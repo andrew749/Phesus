@@ -14,6 +14,8 @@
 		B06B7C4A1C4CB090007C27E5 /* ConnectionType.swift in Sources */ = {isa = PBXBuildFile; fileRef = B06B7C491C4CB090007C27E5 /* ConnectionType.swift */; };
 		B06B7C4C1C4CB1A6007C27E5 /* NodeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B06B7C4B1C4CB1A6007C27E5 /* NodeView.swift */; };
 		B06B7C4E1C4CB332007C27E5 /* ConnectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B06B7C4D1C4CB332007C27E5 /* ConnectionView.swift */; };
+		B06B7C511C4DDFE9007C27E5 /* PhesusView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B06B7C501C4DDFE9007C27E5 /* PhesusView.swift */; };
+		B06B7C531C4DE057007C27E5 /* PhesusViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B06B7C521C4DE057007C27E5 /* PhesusViewModel.swift */; };
 		B0752E771C48AB8E0024A178 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0752E761C48AB8E0024A178 /* AppDelegate.swift */; };
 		B0752E791C48AB8E0024A178 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0752E781C48AB8E0024A178 /* ViewController.swift */; };
 		B0752E7C1C48AB8E0024A178 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B0752E7A1C48AB8E0024A178 /* Main.storyboard */; };
@@ -49,6 +51,8 @@
 		B06B7C491C4CB090007C27E5 /* ConnectionType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConnectionType.swift; sourceTree = "<group>"; };
 		B06B7C4B1C4CB1A6007C27E5 /* NodeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NodeView.swift; sourceTree = "<group>"; };
 		B06B7C4D1C4CB332007C27E5 /* ConnectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConnectionView.swift; sourceTree = "<group>"; };
+		B06B7C501C4DDFE9007C27E5 /* PhesusView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhesusView.swift; sourceTree = "<group>"; };
+		B06B7C521C4DE057007C27E5 /* PhesusViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhesusViewModel.swift; sourceTree = "<group>"; };
 		B0752E731C48AB8E0024A178 /* Phesus.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Phesus.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B0752E761C48AB8E0024A178 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B0752E781C48AB8E0024A178 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -94,6 +98,7 @@
 			isa = PBXGroup;
 			children = (
 				B06B7C421C4CAE26007C27E5 /* Node.swift */,
+				B06B7C521C4DE057007C27E5 /* PhesusViewModel.swift */,
 				B06B7C441C4CAE2E007C27E5 /* Connection.swift */,
 				B06B7C461C4CAEF9007C27E5 /* NodeType.swift */,
 				B06B7C491C4CB090007C27E5 /* ConnectionType.swift */,
@@ -106,6 +111,8 @@
 			children = (
 				B06B7C4B1C4CB1A6007C27E5 /* NodeView.swift */,
 				B06B7C4D1C4CB332007C27E5 /* ConnectionView.swift */,
+				B06B7C401C4CABBE007C27E5 /* ProjectView.swift */,
+				B06B7C501C4DDFE9007C27E5 /* PhesusView.swift */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -135,7 +142,6 @@
 			children = (
 				B0752E761C48AB8E0024A178 /* AppDelegate.swift */,
 				B0752E781C48AB8E0024A178 /* ViewController.swift */,
-				B06B7C401C4CABBE007C27E5 /* ProjectView.swift */,
 				B06B7C4F1C4CB507007C27E5 /* Views */,
 				B06B7C481C4CAFB4007C27E5 /* DataModels */,
 				B0752E7A1C48AB8E0024A178 /* Main.storyboard */,
@@ -302,8 +308,10 @@
 				B06B7C451C4CAE2E007C27E5 /* Connection.swift in Sources */,
 				B06B7C431C4CAE26007C27E5 /* Node.swift in Sources */,
 				B06B7C4C1C4CB1A6007C27E5 /* NodeView.swift in Sources */,
+				B06B7C511C4DDFE9007C27E5 /* PhesusView.swift in Sources */,
 				B06B7C4E1C4CB332007C27E5 /* ConnectionView.swift in Sources */,
 				B0752E7F1C48AB8E0024A178 /* Phesus.xcdatamodeld in Sources */,
+				B06B7C531C4DE057007C27E5 /* PhesusViewModel.swift in Sources */,
 				B06B7C411C4CABBE007C27E5 /* ProjectView.swift in Sources */,
 				B0752E771C48AB8E0024A178 /* AppDelegate.swift in Sources */,
 			);

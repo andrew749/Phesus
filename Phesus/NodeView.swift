@@ -8,7 +8,7 @@
 
 import Foundation
 import UIKit
-class NodeView:UIView {
+class NodeView:PhesusView {
     var node:Node
     
     var fillColor:CGColorRef
@@ -16,7 +16,7 @@ class NodeView:UIView {
     init (node:Node) {
         self.node = node
         fillColor = UIColor.blueColor().CGColor
-        super.init(frame: node.getRect())
+        super.init(data: node)
     }
     
     required init?(coder aDecoder: NSCoder) {
@@ -24,6 +24,7 @@ class NodeView:UIView {
     }
     
     override func drawRect(rect: CGRect) {
+        super.drawRect(rect)
         let ctx = UIGraphicsGetCurrentContext()
         CGContextSetFillColorWithColor(ctx, fillColor)
         CGContextFillRect(ctx, node.getRect())

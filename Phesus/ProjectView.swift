@@ -16,25 +16,23 @@ class ProjectView: UIView {
     
     var childrenViews:[UIView] = []
     
-    init(frame:CGRect, childrenViews:[UIView]) {
-        self.childrenViews = childrenViews
-        super.init(frame: frame)
-    }
-
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
     }
-// Main drawing
+//// Main drawing
     override func drawRect(rect: CGRect) {
         super.drawRect(rect)
         for view in childrenViews {
-            view.drawRect(rect)
+            view.drawRect(view.frame)
         }
     }
     
-    func addChildView(view:UIView) {
+    override func addSubview(view: UIView) {
+        super.addSubview(view)
         childrenViews.append(view)
         self.drawRect(self.frame)
     }
+    
+
     
 }
