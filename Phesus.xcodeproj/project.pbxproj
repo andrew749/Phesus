@@ -98,8 +98,8 @@
 			isa = PBXGroup;
 			children = (
 				B06B7C421C4CAE26007C27E5 /* Node.swift */,
-				B06B7C521C4DE057007C27E5 /* PhesusViewModel.swift */,
 				B06B7C441C4CAE2E007C27E5 /* Connection.swift */,
+				B06B7C521C4DE057007C27E5 /* PhesusViewModel.swift */,
 				B06B7C461C4CAEF9007C27E5 /* NodeType.swift */,
 				B06B7C491C4CB090007C27E5 /* ConnectionType.swift */,
 			);

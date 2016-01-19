@@ -24,9 +24,9 @@ class NodeView:PhesusView {
     }
     
     override func drawRect(rect: CGRect) {
-        super.drawRect(rect)
         let ctx = UIGraphicsGetCurrentContext()
         CGContextSetFillColorWithColor(ctx, fillColor)
         CGContextFillRect(ctx, node.getRect())
+        super.drawRect(rect)
     }
 }

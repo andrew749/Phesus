@@ -11,9 +11,6 @@ import UIKit
 
 class ProjectView: UIView {
     
-    let NODE_WIDTH:CGFloat = 100
-    let NODE_HEIGHT:CGFloat = 100
-    
     var childrenViews:[UIView] = []
     
     required init?(coder aDecoder: NSCoder) {
@@ -21,9 +18,8 @@ class ProjectView: UIView {
     }
 //// Main drawing
     override func drawRect(rect: CGRect) {
-        super.drawRect(rect)
         for view in childrenViews {
-            view.drawRect(view.frame)
+            view.drawRect(rect)
         }
     }
     

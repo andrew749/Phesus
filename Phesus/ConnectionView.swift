@@ -16,8 +16,8 @@ class ConnectionView: PhesusView {
     
     init(connection:Connection) {
         self.connection = connection
-        self.fillColor = UIColor.brownColor().CGColor
-        super.init(data: connection)
+        self.fillColor = UIColor.redColor().CGColor
+        super.init(data: connection, frame:CGRectZero)
     }
 
     required init?(coder aDecoder: NSCoder) {
@@ -26,9 +26,7 @@ class ConnectionView: PhesusView {
 
 
     override func drawRect(rect: CGRect) {
-        super.drawRect(rect)
         let ctx = UIGraphicsGetCurrentContext()
-        
         CGContextSetStrokeColorWithColor(ctx, fillColor)
         CGContextMoveToPoint(ctx, connection.getX(), connection.getY())
         CGContextAddLineToPoint(ctx, connection.getToX(), connection.getToY())

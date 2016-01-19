@@ -15,15 +15,18 @@ class PhesusView: UIView {
         self.data = data
         super.init(frame: data.getRect())
     }
+    init(data:PhesusViewModel, frame:CGRect) {
+        self.data = data
+        super.init(frame: CGRect(x: frame.origin.x, y: frame.origin.y, width: frame.size.width, height: frame.size.height))
+    }
 
     required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
     
     func moveObject(newX:CGFloat, newY:CGFloat) {
-        data.x = newX
-        data.y = newY
-        self.frame = data.getRect()
-        self.drawRect(self.frame)
+        let tempRect = CGRect(x:newX, y:newY, width:data.width, height:data.height)
+        self.frame = tempRect
+        data.moveRect(newX, y: newY)
     }
 }

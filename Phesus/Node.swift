@@ -19,11 +19,12 @@ class Node:PhesusViewModel {
     }
 
     required init(x: CGFloat, y: CGFloat, width: CGFloat, height: CGFloat) {
-        fatalError("init(x:y:width:height:) has not been implemented")
+        self.type = NodeType.RECTANGLE
+        super.init(x: x, y: y, width: width, height: height)
     }
     
     override func getRect () -> CGRect {
-        return CGRect(x: x - width/2, y: y-height/2, width: width, height: height)
+        return CGRect(x: x, y: y, width: width, height: height)
     }
     
 }
