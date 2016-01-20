@@ -9,8 +9,10 @@
 import Foundation
 
 class Constants {
-    static let serverUrl:String = "localhost:3000/"
-    
+    static let serverUrl:String = "http://localhost:3000/"
+    static func getProjectByUser (userId:String) ->String {
+        return serverUrl + ""
+    }
     static func dataUrl() ->String {
         return serverUrl + "data"
     }

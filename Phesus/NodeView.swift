@@ -17,7 +17,7 @@ class NodeView:PhesusView, UITextFieldDelegate {
         self.node = node
         self.fillColor = UIColor.blueColor().CGColor
         super.init(data: node)
-        self.backgroundColor = UIColor.yellowColor()
+        self.backgroundColor = UIColor.clearColor()
         
         self.addSubview(textBox)
         

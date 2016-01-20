@@ -11,6 +11,7 @@ import UIKit
 class ViewController: UIViewController {
     
     @IBOutlet weak var mainView: ProjectView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib
@@ -25,7 +26,7 @@ class ViewController: UIViewController {
         }
     }
     
-    func createViewObjects() -> Set<PhesusView>{
+    func createViewObjects() -> [PhesusView]{
         let tempNode = Node(x: 100, y: 100, type: NodeType.RECTANGLE)
         let tempNode2 = Node(x: 200, y: 200, type: NodeType.RECTANGLE)
         let tempNode3 = Node(x: 150, y: 300, type: NodeType.RECTANGLE)
@@ -43,13 +44,15 @@ class ViewController: UIViewController {
         let connectionView2 = ConnectionView(connection: connection2)
         let connectionView3 = ConnectionView(connection: connection3)
         
-        var tempViews = Set<PhesusView>()
-        tempViews.insert(tempView)
-        tempViews.insert(tempView2)
-        tempViews.insert(tempView3)
-        tempViews.insert(connectionView)
-        tempViews.insert(connectionView2)
-        tempViews.insert(connectionView3)
+        var tempViews:[PhesusView] = []
+        tempViews.append(connectionView)
+        tempViews.append(connectionView2)
+        tempViews.append(connectionView3)
+        
+        tempViews.append(tempView)
+        tempViews.append(tempView2)
+        tempViews.append(tempView3)
+        
         
         return tempViews
     }
