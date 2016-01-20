@@ -26,7 +26,7 @@ class ProjectView: UIView {
     override func addSubview(view: UIView) {
         super.addSubview(view)
         childrenViews.append(view)
-        self.drawRect(self.frame)
+//        self.drawRect(self.frame)
     }
     
 

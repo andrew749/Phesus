@@ -8,15 +8,25 @@
 
 import Foundation
 import UIKit
-class NodeView:PhesusView {
+class NodeView:PhesusView, UITextFieldDelegate {
     var node:Node
-    
+    var textBox:UITextField = UITextField()
     var fillColor:CGColorRef
     
     init (node:Node) {
         self.node = node
-        fillColor = UIColor.blueColor().CGColor
+        self.fillColor = UIColor.blueColor().CGColor
         super.init(data: node)
+        self.backgroundColor = UIColor.yellowColor()
+        
+        self.addSubview(textBox)
+        
+        self.addConstraint(NSLayoutConstraint(item: self, attribute: NSLayoutAttribute.Left, relatedBy: NSLayoutRelation.Equal, toItem: textBox, attribute: NSLayoutAttribute.Left, multiplier: 1, constant: 0))
+        self.addConstraint(NSLayoutConstraint(item: self, attribute: NSLayoutAttribute.Right, relatedBy: NSLayoutRelation.Equal, toItem: textBox, attribute: NSLayoutAttribute.Right, multiplier: 1, constant: 0))
+        
+        textBox.text = "Data"
+        textBox.delegate = self
+        textBox.sizeToFit()
     }
     
     required init?(coder aDecoder: NSCoder) {
@@ -27,6 +37,12 @@ class NodeView:PhesusView {
         let ctx = UIGraphicsGetCurrentContext()
         CGContextSetFillColorWithColor(ctx, fillColor)
         CGContextFillRect(ctx, node.getRect())
-        super.drawRect(rect)
     }
+    
+//MARK: Textfield delegate
+    func textFieldDidEndEditing(textField: UITextField) {
+        //send the changed data to the data service
+        
+    }
+
 }

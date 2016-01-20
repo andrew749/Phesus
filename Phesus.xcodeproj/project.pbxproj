@@ -16,8 +16,10 @@
 		B06B7C4E1C4CB332007C27E5 /* ConnectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B06B7C4D1C4CB332007C27E5 /* ConnectionView.swift */; };
 		B06B7C511C4DDFE9007C27E5 /* PhesusView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B06B7C501C4DDFE9007C27E5 /* PhesusView.swift */; };
 		B06B7C531C4DE057007C27E5 /* PhesusViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B06B7C521C4DE057007C27E5 /* PhesusViewModel.swift */; };
+		B06B7C551C4E177B007C27E5 /* ServerInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = B06B7C541C4E177B007C27E5 /* ServerInteractor.swift */; };
+		B06B7C571C4F4EA8007C27E5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B06B7C561C4F4EA8007C27E5 /* ViewController.swift */; };
+		B06B7C591C4F5624007C27E5 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = B06B7C581C4F5624007C27E5 /* Constants.swift */; };
 		B0752E771C48AB8E0024A178 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0752E761C48AB8E0024A178 /* AppDelegate.swift */; };
-		B0752E791C48AB8E0024A178 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0752E781C48AB8E0024A178 /* ViewController.swift */; };
 		B0752E7C1C48AB8E0024A178 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B0752E7A1C48AB8E0024A178 /* Main.storyboard */; };
 		B0752E7F1C48AB8E0024A178 /* Phesus.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B0752E7D1C48AB8E0024A178 /* Phesus.xcdatamodeld */; };
 		B0752E811C48AB8E0024A178 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B0752E801C48AB8E0024A178 /* Assets.xcassets */; };
@@ -53,9 +55,11 @@
 		B06B7C4D1C4CB332007C27E5 /* ConnectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConnectionView.swift; sourceTree = "<group>"; };
 		B06B7C501C4DDFE9007C27E5 /* PhesusView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhesusView.swift; sourceTree = "<group>"; };
 		B06B7C521C4DE057007C27E5 /* PhesusViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhesusViewModel.swift; sourceTree = "<group>"; };
+		B06B7C541C4E177B007C27E5 /* ServerInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServerInteractor.swift; sourceTree = "<group>"; };
+		B06B7C561C4F4EA8007C27E5 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		B06B7C581C4F5624007C27E5 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		B0752E731C48AB8E0024A178 /* Phesus.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Phesus.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B0752E761C48AB8E0024A178 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		B0752E781C48AB8E0024A178 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		B0752E7B1C48AB8E0024A178 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B0752E7E1C48AB8E0024A178 /* Phesus.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Phesus.xcdatamodel; sourceTree = "<group>"; };
 		B0752E801C48AB8E0024A178 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -140,8 +144,10 @@
 		B0752E751C48AB8E0024A178 /* Phesus */ = {
 			isa = PBXGroup;
 			children = (
+				B06B7C561C4F4EA8007C27E5 /* ViewController.swift */,
 				B0752E761C48AB8E0024A178 /* AppDelegate.swift */,
-				B0752E781C48AB8E0024A178 /* ViewController.swift */,
+				B06B7C541C4E177B007C27E5 /* ServerInteractor.swift */,
+				B06B7C581C4F5624007C27E5 /* Constants.swift */,
 				B06B7C4F1C4CB507007C27E5 /* Views */,
 				B06B7C481C4CAFB4007C27E5 /* DataModels */,
 				B0752E7A1C48AB8E0024A178 /* Main.storyboard */,
@@ -302,16 +308,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B0752E791C48AB8E0024A178 /* ViewController.swift in Sources */,
 				B06B7C4A1C4CB090007C27E5 /* ConnectionType.swift in Sources */,
 				B06B7C471C4CAEF9007C27E5 /* NodeType.swift in Sources */,
+				B06B7C551C4E177B007C27E5 /* ServerInteractor.swift in Sources */,
 				B06B7C451C4CAE2E007C27E5 /* Connection.swift in Sources */,
 				B06B7C431C4CAE26007C27E5 /* Node.swift in Sources */,
 				B06B7C4C1C4CB1A6007C27E5 /* NodeView.swift in Sources */,
 				B06B7C511C4DDFE9007C27E5 /* PhesusView.swift in Sources */,
 				B06B7C4E1C4CB332007C27E5 /* ConnectionView.swift in Sources */,
+				B06B7C571C4F4EA8007C27E5 /* ViewController.swift in Sources */,
 				B0752E7F1C48AB8E0024A178 /* Phesus.xcdatamodeld in Sources */,
 				B06B7C531C4DE057007C27E5 /* PhesusViewModel.swift in Sources */,
+				B06B7C591C4F5624007C27E5 /* Constants.swift in Sources */,
 				B06B7C411C4CABBE007C27E5 /* ProjectView.swift in Sources */,
 				B0752E771C48AB8E0024A178 /* AppDelegate.swift in Sources */,
 			);

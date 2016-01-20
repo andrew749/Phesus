@@ -28,8 +28,8 @@ class PhesusViewModel {
     }
     
     func moveRect(x:CGFloat, y:CGFloat) {
-        self.x = x
-        self.y = y
+        self.x = x - width/2
+        self.y = y - height/2
     }
     
 }

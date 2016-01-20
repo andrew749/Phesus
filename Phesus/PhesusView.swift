@@ -9,6 +9,7 @@
 import Foundation
 import UIKit
 class PhesusView: UIView {
+    
     var data:PhesusViewModel
     
     init(data:PhesusViewModel) {
@@ -25,8 +26,7 @@ class PhesusView: UIView {
     }
     
     func moveObject(newX:CGFloat, newY:CGFloat) {
-        let tempRect = CGRect(x:newX, y:newY, width:data.width, height:data.height)
-        self.frame = tempRect
         data.moveRect(newX, y: newY)
+        self.frame = data.getRect()
     }
 }
