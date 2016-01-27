@@ -16,17 +16,17 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
+        var vc:UIViewController?
         // Override point for customization after application launch.
         if (!NSUserDefaults.standardUserDefaults().boolForKey(Constants.firstLaunch)) {
             let loginStoryboard:UIStoryboard  = UIStoryboard(name: "LoginFlow", bundle: nil)
-            let vc:UIViewController = loginStoryboard.instantiateInitialViewController() as UIViewController!
-            self.window?.rootViewController?.navigationController?.pushViewController(vc, animated: true)
+            vc = loginStoryboard.instantiateInitialViewController() as UIViewController!
         } else {
             let storyboard:UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
-            let vc:UIViewController = storyboard.instantiateInitialViewController() as UIViewController!
-            self.window?.rootViewController?.navigationController?.pushViewController(vc, animated: true)
+            vc = storyboard.instantiateInitialViewController() as UIViewController!
         }
-        
+        self.window!.rootViewController? = vc!
+        self.window!.makeKeyAndVisible()
         return true
     }
 
