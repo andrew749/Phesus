@@ -18,8 +18,8 @@ class ServerData {
     }
     
     func getProjectForUser(userId:String, completion: (Project) -> Void) {
-        let getProject
-        NSURLConnection.sendAsynchronousRequest(<#T##request: NSURLRequest##NSURLRequest#>, queue: <#T##NSOperationQueue#>, completionHandler: <#T##(NSURLResponse?, NSData?, NSError?) -> Void#>)
+//        let getProject
+//        NSURLConnection.sendAsynchronousRequest(<#T##request: NSURLRequest##NSURLRequest#>, queue: <#T##NSOperationQueue#>, completionHandler: <#T##(NSURLResponse?, NSData?, NSError?) -> Void#>)
     }
     
 }

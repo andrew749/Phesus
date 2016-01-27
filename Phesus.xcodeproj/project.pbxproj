@@ -29,6 +29,7 @@
 		B0752E841C48AB8E0024A178 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B0752E821C48AB8E0024A178 /* LaunchScreen.storyboard */; };
 		B0752E8F1C48AB8E0024A178 /* PhesusTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0752E8E1C48AB8E0024A178 /* PhesusTests.swift */; };
 		B0752E9A1C48AB8F0024A178 /* PhesusUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0752E991C48AB8F0024A178 /* PhesusUITests.swift */; };
+		B0AF2A721C58919400F32961 /* LoginFlow.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B0AF2A711C58919400F32961 /* LoginFlow.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -77,6 +78,7 @@
 		B0752E951C48AB8F0024A178 /* PhesusUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PhesusUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B0752E991C48AB8F0024A178 /* PhesusUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhesusUITests.swift; sourceTree = "<group>"; };
 		B0752E9B1C48AB8F0024A178 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B0AF2A711C58919400F32961 /* LoginFlow.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LoginFlow.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -168,6 +170,7 @@
 				B06B7C4F1C4CB507007C27E5 /* Views */,
 				B06B7C481C4CAFB4007C27E5 /* DataModels */,
 				B0752E7A1C48AB8E0024A178 /* Main.storyboard */,
+				B0AF2A711C58919400F32961 /* LoginFlow.storyboard */,
 				B0752E801C48AB8E0024A178 /* Assets.xcassets */,
 				B0752E821C48AB8E0024A178 /* LaunchScreen.storyboard */,
 				B0752E851C48AB8E0024A178 /* Info.plist */,
@@ -298,6 +301,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B0AF2A721C58919400F32961 /* LoginFlow.storyboard in Resources */,
 				B0752E841C48AB8E0024A178 /* LaunchScreen.storyboard in Resources */,
 				B0752E811C48AB8E0024A178 /* Assets.xcassets in Resources */,
 				B0752E7C1C48AB8E0024A178 /* Main.storyboard in Resources */,

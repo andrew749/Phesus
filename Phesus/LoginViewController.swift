@@ -10,15 +10,16 @@ import Foundation
 import UIKit
 
 class LoginViewController:UIViewController {
-    init() {
-        
-    }
 
     required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
     
     override func viewDidLoad() {
+        
+    }
+    
+    func login(userId:String, password:String) {
         
     }
 }

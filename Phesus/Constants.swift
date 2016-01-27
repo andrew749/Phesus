@@ -10,6 +10,7 @@ import Foundation
 
 class Constants {
     static let serverUrl:String = "http://localhost:3000/"
+    static let firstLaunch:String = "firstLaunch"
     static func getProjectByUser (userId:String) ->String {
         return serverUrl + ""
     }

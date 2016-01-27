@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="7na-gD-8Zy">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="zF8-5l-RKy">
+            <objects>
+                <viewController id="7na-gD-8Zy" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="fqA-5r-jo0"/>
+                        <viewControllerLayoutGuide type="bottom" id="erk-lH-kh6"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Gui-gM-4GB">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Phesus" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gdr-eg-VXx">
+                                <rect key="frame" x="272" y="20" width="56" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="HZv-id-1Fe"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tak-gX-RTb">
+                                <rect key="frame" x="275" y="562" width="50" height="30"/>
+                                <state key="normal" title="Google"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rn7-L2-aKb">
+                                <rect key="frame" x="267" y="524" width="67" height="30"/>
+                                <state key="normal" title="Facebook"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="erk-lH-kh6" firstAttribute="top" secondItem="Tak-gX-RTb" secondAttribute="bottom" constant="8" symbolic="YES" id="3I7-jh-Bg3"/>
+                            <constraint firstItem="gdr-eg-VXx" firstAttribute="centerX" secondItem="Rn7-L2-aKb" secondAttribute="centerX" id="9mA-pk-Pjx"/>
+                            <constraint firstItem="Rn7-L2-aKb" firstAttribute="centerX" secondItem="Tak-gX-RTb" secondAttribute="centerX" id="HmY-xG-9c7"/>
+                            <constraint firstItem="gdr-eg-VXx" firstAttribute="top" secondItem="fqA-5r-jo0" secondAttribute="bottom" id="gGc-xs-k83"/>
+                            <constraint firstItem="Tak-gX-RTb" firstAttribute="top" secondItem="Rn7-L2-aKb" secondAttribute="bottom" constant="8" symbolic="YES" id="kNU-4G-gxv"/>
+                            <constraint firstItem="Tak-gX-RTb" firstAttribute="centerX" secondItem="Gui-gM-4GB" secondAttribute="centerX" id="tyY-vz-TgC"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8JK-M8-aGf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-367" y="360"/>
+        </scene>
+    </scenes>
+</document>
